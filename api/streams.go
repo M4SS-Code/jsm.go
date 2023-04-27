@@ -578,6 +578,7 @@ type StreamSource struct {
 	OptStartTime         *time.Time      `json:"opt_start_time,omitempty" yaml:"opt_start_time"`
 	FilterSubject        string          `json:"filter_subject,omitempty" yaml:"filter_subject"`
 	External             *ExternalStream `json:"external,omitempty" yaml:"external"`
+	Heartbeat            time.Duration   `json:"idle_heartbeat,omitempty"`
 	SubjectTransformDest string          `json:"subject_transform_dest,omitempty" yaml:"subject_transform_dest"`
 }
 
